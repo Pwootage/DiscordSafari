@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		62076C352569C74B00B6C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62076C342569C74B00B6C20C /* AppDelegate.swift */; };
 		62076C372569C74B00B6C20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62076C362569C74B00B6C20C /* ViewController.swift */; };
-		62076C392569C74C00B6C20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62076C382569C74C00B6C20C /* Assets.xcassets */; };
 		62076C3C2569C74C00B6C20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62076C3A2569C74C00B6C20C /* Main.storyboard */; };
+		62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62076C462569C80300B6C20C /* WebKit.framework */; };
+		626DB1FA2569DC5700B2275C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62076C382569C74C00B6C20C /* Assets.xcassets */; };
+		62F92D5B2569DDED00E83B5A /* Discord.icns in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D5A2569DDED00E83B5A /* Discord.icns */; };
+		62F92D632569DF0500E83B5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D622569DF0500E83B5A /* README.md */; };
+		62F92D662569E09000E83B5A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D652569E09000E83B5A /* LICENSE.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +25,10 @@
 		62076C3B2569C74C00B6C20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		62076C3D2569C74C00B6C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62076C3E2569C74C00B6C20C /* DiscordSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscordSafari.entitlements; sourceTree = "<group>"; };
+		62076C462569C80300B6C20C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		62F92D5A2569DDED00E83B5A /* Discord.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Discord.icns; sourceTree = "<group>"; };
+		62F92D622569DF0500E83B5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		62F92D652569E09000E83B5A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,8 +46,11 @@
 		62076C282569C74B00B6C20C = {
 			isa = PBXGroup;
 			children = (
+				62F92D652569E09000E83B5A /* LICENSE.md */,
+				62F92D622569DF0500E83B5A /* README.md */,
 				62076C332569C74B00B6C20C /* DiscordSafari */,
 				62076C322569C74B00B6C20C /* Products */,
+				62076C452569C80300B6C20C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -53,6 +65,7 @@
 		62076C332569C74B00B6C20C /* DiscordSafari */ = {
 			isa = PBXGroup;
 			children = (
+				62F92D5A2569DDED00E83B5A /* Discord.icns */,
 				62076C342569C74B00B6C20C /* AppDelegate.swift */,
 				62076C362569C74B00B6C20C /* ViewController.swift */,
 				62076C382569C74C00B6C20C /* Assets.xcassets */,
@@ -61,6 +74,14 @@
 				62076C3E2569C74C00B6C20C /* DiscordSafari.entitlements */,
 			);
 			path = DiscordSafari;
+			sourceTree = "<group>";
+		};
+		62076C452569C80300B6C20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				62076C462569C80300B6C20C /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,8 +141,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				62076C392569C74C00B6C20C /* Assets.xcassets in Resources */,
+				626DB1FA2569DC5700B2275C /* Assets.xcassets in Resources */,
 				62076C3C2569C74C00B6C20C /* Main.storyboard in Resources */,
+				62F92D632569DF0500E83B5A /* README.md in Resources */,
+				62F92D5B2569DDED00E83B5A /* Discord.icns in Resources */,
+				62F92D662569E09000E83B5A /* LICENSE.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,9 +293,9 @@
 		62076C422569C74C00B6C20C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiscordSafari/DiscordSafari.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 44N9FY7954;
@@ -290,9 +314,9 @@
 		62076C432569C74C00B6C20C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = DiscordSafari/DiscordSafari.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 44N9FY7954;
