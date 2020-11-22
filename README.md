@@ -1,5 +1,8 @@
 # DiscordSafari
-This is a super simple WebKit wrapper around Discord to run it in Safari instead of Electron. The hope is that this will use less power than the electron version (at the cost of fewer features). It supports drag-n-drop file and open links. 
+This is a super simple WebKit wrapper around Discord to run it in Safari instead of Electron. The hope is that this will use less power than the electron 
+version (at the cost of fewer features). It supports drag-n-drop file and open links.
+
+![Energy usage: 6.8 to 3.6](energy_usage.png)
 
 The entire code is in [ViewController.swift](DiscordSafari/ViewController.swift) (plus a few lines in  [AppDelegate.swift](DiscordSafari/AppDelegate.swift) to close when the window is closed)  and is under 100 lines long total.
 
