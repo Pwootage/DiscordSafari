@@ -3,6 +3,10 @@ This is a super simple WebKit wrapper around Discord to run it in Safari instead
 
 The icon comes from [Elias' macosicons](https://github.com/elrumo/macOS_Big_Sur_icons_replacements)
 
+I believe this is allowed under Discord ToS - since I am not modifying the application in anyway, and am simply behaving as a web browser.
+
+Use at your own risk, but it's an extremely simple app, so you can easily audit the code yourself. I recommend building the app for yourself; but a release is provided in releases.
+
 LICENSE:
 
 All content in this repo is public domain, except the icon, which is subject to the license of [Elias' macosicons](https://github.com/elrumo/macOS_Big_Sur_icons_replacements), which is GPLv3.
