@@ -11,6 +11,7 @@
 		62076C372569C74B00B6C20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62076C362569C74B00B6C20C /* ViewController.swift */; };
 		62076C3C2569C74C00B6C20C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62076C3A2569C74C00B6C20C /* Main.storyboard */; };
 		62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62076C462569C80300B6C20C /* WebKit.framework */; };
+		6224C4662569ECE500FBFD62 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6224C4652569ECE500FBFD62 /* UserNotifications.framework */; };
 		626DB1FA2569DC5700B2275C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62076C382569C74C00B6C20C /* Assets.xcassets */; };
 		62F92D5B2569DDED00E83B5A /* Discord.icns in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D5A2569DDED00E83B5A /* Discord.icns */; };
 		62F92D632569DF0500E83B5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D622569DF0500E83B5A /* README.md */; };
@@ -26,6 +27,7 @@
 		62076C3D2569C74C00B6C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62076C3E2569C74C00B6C20C /* DiscordSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DiscordSafari.entitlements; sourceTree = "<group>"; };
 		62076C462569C80300B6C20C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6224C4652569ECE500FBFD62 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		62F92D5A2569DDED00E83B5A /* Discord.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Discord.icns; sourceTree = "<group>"; };
 		62F92D622569DF0500E83B5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		62F92D652569E09000E83B5A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6224C4662569ECE500FBFD62 /* UserNotifications.framework in Frameworks */,
 				62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,6 +82,7 @@
 		62076C452569C80300B6C20C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6224C4652569ECE500FBFD62 /* UserNotifications.framework */,
 				62076C462569C80300B6C20C /* WebKit.framework */,
 			);
 			name = Frameworks;
