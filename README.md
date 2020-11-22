@@ -6,9 +6,7 @@ version (at the cost of fewer features). It supports drag-n-drop file and open l
 
 Your mileage may vary.
 
-![Energy usage: 6.8 to 3.6](energy_usage.png)
-
-The entire code is in [ViewController.swift](DiscordSafari/ViewController.swift) (plus a few lines in  [AppDelegate.swift](DiscordSafari/AppDelegate.swift) to close when the window is closed)  and is under 100 lines long total.
+The entire code is in [ViewController.swift](DiscordSafari/ViewController.swift) (plus a few lines in  [AppDelegate.swift](DiscordSafari/AppDelegate.swift) to close when the window is closed) and is around 200 lines long total.
 
 The icon comes from [Elias' macosicons](https://github.com/elrumo/macOS_Big_Sur_icons_replacements)
 
