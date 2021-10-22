@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>Discord.icns</string>
+	<string>Slack.icns</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -28,5 +28,10 @@
 	<string>Main</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
+	<key>WKAppBoundDomains</key>
+	<array>
+		<string>slack.com</string>
+		<string>app.slack.com</string>
+	</array>
 </dict>
 </plist>

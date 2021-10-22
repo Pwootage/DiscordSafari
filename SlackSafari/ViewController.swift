@@ -22,6 +22,12 @@ class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
         self.webview.uiDelegate = self
         self.webview.navigationDelegate = self
         
+        // Set the User Agent String to that of Safari
+        // This prevents an "unsupported browser" error and ensures the best version of Slack for WebKit gets loaded.
+        
+        let userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.0 Safari/605.1.15"
+        self.webview.customUserAgent = userAgent
+        
         // Set up javascript notifications interface
 //        let allowedDefault: String
 //        if self.appDelegate.notificationsEnabled {
@@ -53,32 +59,34 @@ class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
         self.webview.configuration.userContentController.add(SendNotificationHandler(), name: "sendNotification")
         
         // Load discord
-        let myURL = URL(string: "https://discord.com/app")
+        let myURL = URL(string: "https://app.slack.com/client")
         let myRequest = URLRequest(url: myURL!)
         self.webview.load(myRequest)
     }
     
-    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
-        
-        if navigationAction.navigationType == .linkActivated {
-            // You clicked a link, check it to open it in safari, don't navigate
-            if let url = navigationAction.request.url {
-                openInOS(url)
-            }
-            decisionHandler(.cancel)
-        } else {
-            // Allow only navigation to discord.com
-            if let host = navigationAction.request.url?.host {
-                if (host == "discord.com") {
-                    decisionHandler(.allow)
-                } else {
-                    decisionHandler(.cancel)
-                }
-            } else {
-                decisionHandler(.cancel)
-            }
-        }
-    }
+    // This used to stop sites other than Discord from loading. I've disabled it as WKAppBoundDomains seems to serve the same purpose and plays nicer with Slack, since Slack uses multiple subdomains.
+    
+//    func webView(_ webView: WKWebView, decidePolicyFor navigationAction: WKNavigationAction, decisionHandler: @escaping (WKNavigationActionPolicy) -> Void) {
+//
+//        if navigationAction.navigationType == .linkActivated {
+//            // You clicked a link, check it to open it in safari, don't navigate
+//            if let url = navigationAction.request.url {
+//                openInOS(url)
+//            }
+//            decisionHandler(.cancel)
+//        } else {
+//            // Allow only navigation to discord.com
+//            if let host = navigationAction.request.url?.host {
+//                if (host == "slack.com") {
+//                    decisionHandler(.allow)
+//                } else {
+//                    decisionHandler(.cancel)
+//                }
+//            } else {
+//                decisionHandler(.cancel)
+//            }
+//        }
+//    }
     
     func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
         if let url = navigationAction.request.url {
