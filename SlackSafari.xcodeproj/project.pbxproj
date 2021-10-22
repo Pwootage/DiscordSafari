@@ -1,0 +1,368 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		62076C352569C74B00B6C20C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62076C342569C74B00B6C20C /* AppDelegate.swift */; };
+		62076C372569C74B00B6C20C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62076C362569C74B00B6C20C /* ViewController.swift */; };
+		62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62076C462569C80300B6C20C /* WebKit.framework */; };
+		6224C4662569ECE500FBFD62 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6224C4652569ECE500FBFD62 /* UserNotifications.framework */; };
+		626DB1FA2569DC5700B2275C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 62076C382569C74C00B6C20C /* Assets.xcassets */; };
+		62F92D632569DF0500E83B5A /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D622569DF0500E83B5A /* README.md */; };
+		62F92D662569E09000E83B5A /* LICENSE.md in Resources */ = {isa = PBXBuildFile; fileRef = 62F92D652569E09000E83B5A /* LICENSE.md */; };
+		C0A907EE2722F6B900CACA4B /* Slack.icns in Resources */ = {isa = PBXBuildFile; fileRef = C0A907ED2722F6B900CACA4B /* Slack.icns */; };
+		C0A907EF2722F74F00CACA4B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 62076C3A2569C74C00B6C20C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		62076C312569C74B00B6C20C /* SlackSafari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlackSafari.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		62076C342569C74B00B6C20C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		62076C362569C74B00B6C20C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		62076C382569C74C00B6C20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		62076C3B2569C74C00B6C20C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		62076C3D2569C74C00B6C20C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62076C3E2569C74C00B6C20C /* SlackSafari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SlackSafari.entitlements; sourceTree = "<group>"; };
+		62076C462569C80300B6C20C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		6224C4652569ECE500FBFD62 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
+		62F92D622569DF0500E83B5A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		62F92D652569E09000E83B5A /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
+		C0A907ED2722F6B900CACA4B /* Slack.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = Slack.icns; path = ../../../Downloads/Slack.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		62076C2E2569C74B00B6C20C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6224C4662569ECE500FBFD62 /* UserNotifications.framework in Frameworks */,
+				62076C4D2569CBE900B6C20C /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		62076C282569C74B00B6C20C = {
+			isa = PBXGroup;
+			children = (
+				62F92D652569E09000E83B5A /* LICENSE.md */,
+				62F92D622569DF0500E83B5A /* README.md */,
+				62076C332569C74B00B6C20C /* SlackSafari */,
+				62076C322569C74B00B6C20C /* Products */,
+				62076C452569C80300B6C20C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62076C322569C74B00B6C20C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				62076C312569C74B00B6C20C /* SlackSafari.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		62076C332569C74B00B6C20C /* SlackSafari */ = {
+			isa = PBXGroup;
+			children = (
+				C0A907ED2722F6B900CACA4B /* Slack.icns */,
+				62076C342569C74B00B6C20C /* AppDelegate.swift */,
+				62076C362569C74B00B6C20C /* ViewController.swift */,
+				62076C382569C74C00B6C20C /* Assets.xcassets */,
+				62076C3A2569C74C00B6C20C /* Main.storyboard */,
+				62076C3D2569C74C00B6C20C /* Info.plist */,
+				62076C3E2569C74C00B6C20C /* SlackSafari.entitlements */,
+			);
+			path = SlackSafari;
+			sourceTree = "<group>";
+		};
+		62076C452569C80300B6C20C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6224C4652569ECE500FBFD62 /* UserNotifications.framework */,
+				62076C462569C80300B6C20C /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		62076C302569C74B00B6C20C /* SlackSafari */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62076C412569C74C00B6C20C /* Build configuration list for PBXNativeTarget "SlackSafari" */;
+			buildPhases = (
+				62076C2D2569C74B00B6C20C /* Sources */,
+				62076C2E2569C74B00B6C20C /* Frameworks */,
+				62076C2F2569C74B00B6C20C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlackSafari;
+			productName = DiscordSafari;
+			productReference = 62076C312569C74B00B6C20C /* SlackSafari.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		62076C292569C74B00B6C20C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					62076C302569C74B00B6C20C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 62076C2C2569C74B00B6C20C /* Build configuration list for PBXProject "SlackSafari" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 62076C282569C74B00B6C20C;
+			productRefGroup = 62076C322569C74B00B6C20C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				62076C302569C74B00B6C20C /* SlackSafari */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		62076C2F2569C74B00B6C20C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				626DB1FA2569DC5700B2275C /* Assets.xcassets in Resources */,
+				C0A907EF2722F74F00CACA4B /* Main.storyboard in Resources */,
+				C0A907EE2722F6B900CACA4B /* Slack.icns in Resources */,
+				62F92D632569DF0500E83B5A /* README.md in Resources */,
+				62F92D662569E09000E83B5A /* LICENSE.md in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		62076C2D2569C74B00B6C20C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				62076C372569C74B00B6C20C /* ViewController.swift in Sources */,
+				62076C352569C74B00B6C20C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		62076C3A2569C74C00B6C20C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				62076C3B2569C74C00B6C20C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		62076C3F2569C74C00B6C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		62076C402569C74C00B6C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		62076C422569C74C00B6C20C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiscordSafari/DiscordSafari.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E893WPMDG6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SlackSafari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octoturt.SlackSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		62076C432569C74C00B6C20C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = DiscordSafari/DiscordSafari.entitlements;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = E893WPMDG6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "$(SRCROOT)/SlackSafari/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.octoturt.SlackSafari;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		62076C2C2569C74B00B6C20C /* Build configuration list for PBXProject "SlackSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62076C3F2569C74C00B6C20C /* Debug */,
+				62076C402569C74C00B6C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62076C412569C74C00B6C20C /* Build configuration list for PBXNativeTarget "SlackSafari" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62076C422569C74C00B6C20C /* Debug */,
+				62076C432569C74C00B6C20C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62076C292569C74B00B6C20C /* Project object */;
+}
