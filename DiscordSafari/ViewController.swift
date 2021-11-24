@@ -9,7 +9,7 @@ import Cocoa
 import WebKit
 import UserNotifications
 import CryptoKit
-
+import AVFoundation
 class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
     @IBOutlet weak var webview: WKWebView!
     weak var appDelegate: AppDelegate!
@@ -21,14 +21,6 @@ class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
         self.appDelegate = (NSApplication.shared.delegate as! AppDelegate)
         self.webview.uiDelegate = self
         self.webview.navigationDelegate = self
-        
-        // Set up javascript notifications interface
-//        let allowedDefault: String
-//        if self.appDelegate.notificationsEnabled {
-//            allowedDefault = "'granted'"
-//        } else {
-//            allowedDefault = "'denied'"
-//        }
         let allowedDefault = "'granted'"
         let notificationInterface = """
         var __$notif_enabled = \(allowedDefault);
@@ -53,6 +45,10 @@ class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
         self.webview.configuration.userContentController.add(SendNotificationHandler(), name: "sendNotification")
         
         // Load discord
+        self.webview.customUserAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/15.1 Safari/605.1.15"
+        
+        AVCaptureDevice.requestAccess(for: .audio, completionHandler: {_ in})
+        
         let myURL = URL(string: "https://discord.com/app")
         let myRequest = URLRequest(url: myURL!)
         self.webview.load(myRequest)
