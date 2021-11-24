@@ -49,6 +49,9 @@ class ViewController: NSViewController, WKUIDelegate, WKNavigationDelegate {
         
         AVCaptureDevice.requestAccess(for: .audio, completionHandler: {_ in})
         
+        let center = UNUserNotificationCenter.current()
+        center.requestAuthorization(options: [.alert, .sound, .badge]) { _, _ in}
+        
         let myURL = URL(string: "https://discord.com/app")
         let myRequest = URLRequest(url: myURL!)
         self.webview.load(myRequest)
